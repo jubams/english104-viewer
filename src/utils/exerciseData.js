@@ -4,7 +4,7 @@ async function loadExerciseData() {
   if (exerciseData) return exerciseData;
 
   try {
-    const response = await fetch('/exercises/index.json');
+    const response = await fetch(`${import.meta.env.BASE_URL}exercises/index.json`);
     if (!response.ok) {
       throw new Error(`Failed to load index.json: ${response.status}`);
     }
