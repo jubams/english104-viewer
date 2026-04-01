@@ -3,6 +3,8 @@ import ImageViewer from './ImageViewer';
 import ImageModal from './ImageModal';
 import './ExerciseCard.css';
 
+const BASE = import.meta.env.BASE_URL;
+
 function ExerciseCard({ exercise, unitId }) {
   const [showSolutions, setShowSolutions] = useState(false);
   const [modalImage, setModalImage] = useState(null);
@@ -27,9 +29,9 @@ function ExerciseCard({ exercise, unitId }) {
 
       <div className="exercise-questions">
         {exercise.parts.map((part, index) => (
-          <div key={index} className="image-wrapper" onClick={() => openModal(`/exercises/unit-${unitId}/${part}`)}>
+          <div key={index} className="image-wrapper" onClick={() => openModal(`${BASE}exercises/unit-${unitId}/${part}`)}>
             <ImageViewer
-              src={`/exercises/unit-${unitId}/${part}`}
+              src={`${BASE}exercises/unit-${unitId}/${part}`}
               alt={`Exercise ${exercise.number} part ${index}`}
             />
             <div className="zoom-overlay">
@@ -52,9 +54,9 @@ function ExerciseCard({ exercise, unitId }) {
           {showSolutions && (
             <div className="solutions-container">
               {exercise.solutions.map((solution, index) => (
-                <div key={index} className="image-wrapper" onClick={() => openModal(`/exercises/unit-${unitId}/${solution}`)}>
+                <div key={index} className="image-wrapper" onClick={() => openModal(`${BASE}exercises/unit-${unitId}/${solution}`)}>
                   <ImageViewer
-                    src={`/exercises/unit-${unitId}/${solution}`}
+                    src={`${BASE}exercises/unit-${unitId}/${solution}`}
                     alt={`Exercise ${exercise.number} solution ${index + 1}`}
                     className="solution-image"
                   />
