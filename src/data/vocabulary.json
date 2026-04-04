@@ -1,0 +1,200 @@
+{
+  "book_2_vocabulary": {
+    "chapter_9": {
+      "title": "Software Development Methods and Diagrams",
+      "vocabulary": [
+        { "term": "SD (Structured Design)", "definition": "The development of modules and module hierarchies." },
+        { "term": "Modeling stage", "definition": "The identification of the problems that a software needs to solve; the first step in Jackson System Development (JSD)." },
+        { "term": "Implementation stage", "definition": "The point when a design becomes a working piece of software." },
+        { "term": "SA (Structured Analysis)", "definition": "A method for ensuring that software fulfills real-life requirements." },
+        { "term": "Network stage", "definition": "The expression of a design as a set of communicating processes." },
+        { "term": "Structure chart", "definition": "A chart that shows the functions of a system used by engineers to guide software designs." },
+        { "term": "JSD (Jackson System Development)", "definition": "A method of software development consisting of three distinct phases: modeling, network, and implementation." },
+        { "term": "Schematic logic", "definition": "The code used in structure diagrams to represent the logic of a system." },
+        { "term": "Structure diagram", "definition": "A diagram representing compound components in a structure, showing all functions and modules a completed structure will have." },
+        { "term": "Data flow design", "definition": "The practice of mapping the movement of data through a system, often represented graphically." },
+        { "term": "JSP (Jackson Structured Programming)", "definition": "A method of system development based on data flow and program structure." },
+        { "term": "DFD (Data Flow Diagram)", "definition": "A graphical representation of data flow used to optimize the functions of a system." }
+      ]
+    },
+    "chapter_10": {
+      "title": "Object-Oriented Design and Modeling",
+      "vocabulary": [
+        { "term": "Property", "definition": "A characteristic that can be used to identify an object." },
+        { "term": "State", "definition": "Refers to all of the fundamental qualities of an object at a given time." },
+        { "term": "Relationship", "definition": "The interaction between two entities." },
+        { "term": "OMT (Object-Modeling Technique)", "definition": "A method used by software developers to design systems according to the objects they contain." },
+        { "term": "Attribute", "definition": "An unchanging quality of one entity." },
+        { "term": "Object-oriented design", "definition": "A design strategy that organizes system architecture around objects rather than functions." },
+        { "term": "Booch method", "definition": "A software modeling language and process used for object-oriented analysis and design." },
+        { "term": "Collaboration diagram", "definition": "An image that depicts objects in relation to a particular interaction." },
+        { "term": "Sequence diagram", "definition": "An image that measures the time ordering of events within an interaction." },
+        { "term": "Interaction diagram", "definition": "An image that depicts sequences of messages sent between objects." },
+        { "term": "Class diagram", "definition": "An image that models relationships between nodes and depicts the decomposition of a system." },
+        { "term": "State diagram", "definition": "An image that depicts the dynamic behavior of single objects." },
+        { "term": "Fusion method", "definition": "A software development system that structures the process into three distinct phases." },
+        { "term": "Class", "definition": "A group of objects that share similar attributes." }
+      ]
+    },
+    "chapter_11": {
+      "title": "Software Testing and Reliability",
+      "vocabulary": [
+        { "term": "Expected faults", "definition": "Faults that are predicted by engineers during the testing process." },
+        { "term": "Error", "definition": "A mistake made by an engineer in a software's code or input." },
+        { "term": "Prevention model", "definition": "A testing model that attempts to stop faults before they occur." },
+        { "term": "Evaluation model", "definition": "A model used to detect design and implementation faults." },
+        { "term": "Test criteria", "definition": "A set of requirements that software must meet before it passes a test." },
+        { "term": "Oracle", "definition": "A program or tool used by engineers to compare test results with expected results." },
+        { "term": "Fault", "definition": "An internal defect in software caused by human error." },
+        { "term": "Failure", "definition": "An observable occurrence where software does not perform as required." },
+        { "term": "Fault prevention", "definition": "The practice of stopping problems from occurring in the first place." },
+        { "term": "Fault detection", "definition": "The process of identifying existing problems in the software." },
+        { "term": "Satisfy", "definition": "To meet certain requirements or criteria set by engineers." },
+        { "term": "Demonstration model", "definition": "A testing model that ensures software completes all required tasks." },
+        { "term": "Destruction model", "definition": "A testing model specifically designed to detect implementation faults." }
+      ]
+    },
+    "chapter_12": {
+      "title": "Advanced Testing and Analysis",
+      "vocabulary": [
+        { "term": "Dynamic analysis", "definition": "Testing conducted while a program is running." },
+        { "term": "Proof of correctness", "definition": "A process that formally states a program's specifications to prove it works as intended." },
+        { "term": "Black-box testing", "definition": "Testing without looking at the internal code structure." },
+        { "term": "Fault-based testing", "definition": "Testing that focuses primarily on identifying problems or faults." },
+        { "term": "Coverage-based testing", "definition": "Testing measured by the amount of code it actually exercises." },
+        { "term": "White-box testing", "definition": "Testing done where the internal structure/code is known." },
+        { "term": "Scenario-based evaluation", "definition": "Testing that assesses common situations or use cases." },
+        { "term": "Error-based testing", "definition": "Testing looking specifically for common human mistakes." },
+        { "term": "Fagan inspection", "definition": "A formal testing process involving a team of engineers." },
+        { "term": "Static analysis", "definition": "Testing done on code that is not being executed." },
+        { "term": "Stepwise abstraction", "definition": "A technique analyzing software starting with its most primitive parts." },
+        { "term": "Peer review", "definition": "A manual review of software done by a third-party engineer." }
+      ]
+    },
+    "chapter_13": {
+      "title": "Test Adequacy Criteria",
+      "vocabulary": [
+        { "term": "General multiple change property", "definition": "States that programs with the same structure and dataflow should still be tested on different criteria." },
+        { "term": "Applicability property", "definition": "States that an adequate test set exists for every program." },
+        { "term": "Non-exhausting applicability property", "definition": "States that a criterion should not require exhaustive testing." },
+        { "term": "Renaming property", "definition": "States that programs differing only in unimportant ways can use the same test sets." },
+        { "term": "Inadequate empty set property", "definition": "States that an empty set is not an adequate test set for any program." },
+        { "term": "Antidecomposition property", "definition": "States that components tested as part of a whole should still be tested alone." },
+        { "term": "Statement coverage property", "definition": "States that every possible action/statement should be executed by its test sets." },
+        { "term": "Monotonicity property", "definition": "States that software can always be tested further." },
+        { "term": "Test adequacy criteria", "definition": "Rules used to determine if a software project has been tested sufficiently." },
+        { "term": "Complexity property", "definition": "Programs with more components require more testing." },
+        { "term": "Anticomposition property", "definition": "The need to test a whole program even if parts were tested in isolation." },
+        { "term": "Antiextensionality property", "definition": "Equivalence in function doesn't mean equivalence in required testing if structure differs." }
+      ]
+    },
+    "chapter_14": {
+      "title": "Software Maintenance and Evolution",
+      "vocabulary": [
+        { "term": "Perfective maintenance", "definition": "The practice of accommodating new user requirements to improve software." },
+        { "term": "Corrective maintenance", "definition": "The practice of repairing software faults or bugs." },
+        { "term": "Unstructured code", "definition": "The format of a system with no clear order, making it difficult to maintain." },
+        { "term": "Preventive maintenance", "definition": "The practice of making systems easier to maintain in the future." },
+        { "term": "Software maintenance", "definition": "The process of fixing faults and making improvements in software after release." },
+        { "term": "Law of continuing change", "definition": "A system should undergo modification until it is no longer cost-effective." },
+        { "term": "Adaptive maintenance", "definition": "Updating software according to changes in the environment, such as a new OS." },
+        { "term": "Law of increasing complexity", "definition": "Software structure becomes more complex with every change." },
+        { "term": "Insufficient", "definition": "Attributes of a system that are unsuitable or not strong enough for updated environments." },
+        { "term": "Repair", "definition": "To fix problems found in code." },
+        { "term": "Release", "definition": "A new updated version of existing software." },
+        { "term": "Enhance", "definition": "To improve existing components in new versions of software products." }
+      ]
+    },
+    "chapter_15": {
+      "title": "Legacy Systems and Reengineering",
+      "vocabulary": [
+        { "term": "Design recovery", "definition": "The process of creating functionally equivalent versions of disorganized programs." },
+        { "term": "Legacy system", "definition": "An old software system that has been updated multiple times but remains in use." },
+        { "term": "Redocumentation", "definition": "The process of creating documentation for programs that exist at the same level of abstraction." },
+        { "term": "Functional equivalence", "definition": "A state where two programs serve the same purpose in the same way." },
+        { "term": "Web-based", "definition": "Software that is accessed via the internet rather than being disc-based." },
+        { "term": "Reverse engineering", "definition": "Creating new versions of software at higher levels of abstraction by analyzing existing code." },
+        { "term": "Modernize", "definition": "To update old software with current technologies instead of creating new software from scratch." },
+        { "term": "Revamping", "definition": "Creating a new user interface for existing software." },
+        { "term": "Reengineering", "definition": "Making substantial changes to a software system to improve it." },
+        { "term": "Renovation", "definition": "The process where engineers make functional changes to a software system." },
+        { "term": "Restructuring", "definition": "Transforming systems from one representation to another without changing the functionality." }
+      ]
+    }
+  },
+  "book_3_vocabulary": {
+    "chapter_1": {
+      "title": "User Interface Design and CLG",
+      "vocabulary": [
+        { "term": "Communication component", "definition": "Concerns the dialog between systems and users, including the keystroke and syntax levels." },
+        { "term": "Conceptual component", "definition": "Concerns the functions the systems will perform for users, including the task and semantic levels." },
+        { "term": "Material component", "definition": "Considers both the graphics of the user interface and the system hardware." },
+        { "term": "Conceptual model", "definition": "A model rendered in terms of a system's reactions to user actions." },
+        { "term": "Mental model", "definition": "Concerns the way a user understands a computer system." },
+        { "term": "Cognitive view", "definition": "Considers what a user needs to understand about a system in order to operate it." },
+        { "term": "Linguistic view", "definition": "Considers the interactions between a human and a system." },
+        { "term": "CLG (Cognitive Layered Grammar)", "definition": "Describes the user interface of all aspects of a system." },
+        { "term": "User interface", "definition": "Describes the attributes of a system that are relevant to the user." },
+        { "term": "Design view", "definition": "A conceptual model that focuses on icons and screen layouts." }
+      ]
+    },
+    "chapter_2": {
+      "title": "Human-Computer Interaction (HCI)",
+      "vocabulary": [
+        { "term": "Groupware", "definition": "Software that assists groups in working towards a common goal." },
+        { "term": "Presentation", "definition": "All aspects of a system that are perceptible to a user." },
+        { "term": "Artistic design", "definition": "The practice of using graphic design in user interfaces." },
+        { "term": "End user", "definition": "The consumer who will ultimately use a product." },
+        { "term": "Layer", "definition": "A level of system operation." },
+        { "term": "Task analysis", "definition": "A way of evaluating a complex system." },
+        { "term": "MVC paradigm", "definition": "A model that splits user interface design into three distinct parts." },
+        { "term": "HCI", "definition": "The study and design of interactions between computers and users." },
+        { "term": "Ergonomics", "definition": "The study of making physical components comfortable for users." },
+        { "term": "Dialog", "definition": "Interaction between users and computers." },
+        { "term": "Seeheim model", "definition": "Divides an application from its user interface." },
+        { "term": "Functionality", "definition": "The range of operations a system can perform." },
+        { "term": "UVM", "definition": "Comprises a system's hardware and software as seen by the user." },
+        { "term": "Humanities", "definition": "Includes the way people think and react to various features." },
+        { "term": "User-centered design", "definition": "Design focusing extensively on the experience of people using the software." }
+      ]
+    },
+    "chapter_3": {
+      "title": "Software Reuse and Approaches",
+      "vocabulary": [
+        { "term": "COTS (Commercial Off-The-Shelf)", "definition": "Software that is unmodified from its original state and available for public purchase." },
+        { "term": "Technique", "definition": "A skill or specific method used to perform a task." },
+        { "term": "Scope", "definition": "The extent or area that a software or project covers." },
+        { "term": "Substance", "definition": "The components, concepts, and procedures of something." },
+        { "term": "Ad hoc", "definition": "Done in a particular instance only, rather than as a general rule." },
+        { "term": "Product", "definition": "Something that is available for purchase." },
+        { "term": "Source code", "definition": "A list of commands to be executed in a computer program." },
+        { "term": "Software crisis", "definition": "A situation created by a rising demand for new applications." },
+        { "term": "Software reuse", "definition": "The practice of recycling pieces of code into new applications." },
+        { "term": "Approach", "definition": "A way of dealing with something or a development methodology." },
+        { "term": "Usage", "definition": "How something is utilized or applied." },
+        { "term": "White-box reuse", "definition": "Software reuse that requires engineers to modify the code." },
+        { "term": "Black-box reuse", "definition": "Software reuse that does not require engineers to modify the software." },
+        { "term": "Compositional", "definition": "A reuse approach where existing components can easily be reused in new systems." },
+        { "term": "Generative", "definition": "A reuse approach where software can be used to create new programs." }
+      ]
+    },
+    "chapter_4": {
+      "title": "Architectural Planning and Components",
+      "vocabulary": [
+        { "term": "ADL (Architecture Description Language)", "definition": "Provides a plan for the architecture of a new piece of software." },
+        { "term": "Intermediate product", "definition": "A product ready to be used in the development of new software." },
+        { "term": "Code scavenging", "definition": "The practice of finding and reusing code from existing sources." },
+        { "term": "VHLL (Very High-Level Language)", "definition": "A programming language that has a very high level of abstraction." },
+        { "term": "Domain analysis", "definition": "A process that identifies reusable code and information within a specific field of study." },
+        { "term": "Application generator", "definition": "Provides various support tools for developers to create software more efficiently." },
+        { "term": "Transformation system", "definition": "Helps turn vague plans or high-level designs into detailed, functional systems." },
+        { "term": "MIL (Module Interconnection Language)", "definition": "Provides a plan for the overall structure of a software system, focusing on how modules connect." },
+        { "term": "Instantiate", "definition": "To create a specific instance of an object or component." },
+        { "term": "Template", "definition": "An unfinished component provided by application generators for engineers to use as a starting point." },
+        { "term": "Skeleton", "definition": "An unfinished program in the early stages of development that provides the basic structure." },
+        { "term": "Program library", "definition": "A collection of available codes that allows engineers to search for usable pieces and insert them into new software." },
+        { "term": "Middleware", "definition": "Software that connects applications to operating systems and ensures they can run simultaneously without conflict." }
+      ]
+    }
+  }
+}

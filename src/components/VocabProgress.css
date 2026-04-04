@@ -1,0 +1,233 @@
+.vocab-progress-compact {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.progress-summary {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.progress-stat {
+  font-size: 0.85rem;
+  color: var(--text-medium);
+}
+
+.progress-stat strong {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.progress-bar-mini {
+  width: 100%;
+  height: 4px;
+  background: var(--border-light);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar-mini-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--success), #34d399);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.vocab-progress-panel {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.progress-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-lg);
+}
+
+.progress-panel-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.progress-panel-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.toggle-details-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.toggle-details-btn:hover {
+  background: var(--primary-light);
+}
+
+.reset-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.reset-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.progress-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.overview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--bg-page);
+  border-radius: var(--radius-sm);
+}
+
+.overview-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.overview-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+.progress-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.progress-chapter-row {
+  display: grid;
+  grid-template-columns: 140px 1fr auto;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.progress-chapter-row:last-child {
+  border-bottom: none;
+}
+
+.progress-chapter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.progress-chapter-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.progress-chapter-title {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.progress-chapter-bar {
+  height: 8px;
+  background: var(--border-light);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-chapter-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+  background: linear-gradient(90deg, var(--primary), #8b5cf6);
+}
+
+.progress-chapter-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.1rem;
+}
+
+.progress-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+}
+
+.progress-badge.mastered {
+  background: var(--success-light);
+  color: var(--success);
+}
+
+.progress-badge.in-progress {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.progress-badge.not-started {
+  background: var(--bg-page);
+  color: var(--text-light);
+}
+
+.progress-attempts {
+  font-size: 0.7rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .progress-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-chapter-row {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xs);
+  }
+
+  .progress-chapter-stats {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+}

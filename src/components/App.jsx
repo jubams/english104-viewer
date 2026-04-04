@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react';
 import { getAllUnits, getUnitById } from '../utils/exerciseData';
 import UnitSelector from './UnitSelector';
 import ExerciseList from './ExerciseList';
+import VocabHome from './VocabHome';
 import './App.css';
 
 function App() {
   const [units, setUnits] = useState([]);
   const [currentUnit, setCurrentUnit] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [mode, setMode] = useState('exercises');
 
   useEffect(() => {
     async function loadData() {
@@ -62,17 +64,37 @@ function App() {
       <header className="app-header">
         <div className="header-top">
           <div className="book-badge">{currentBook}</div>
-          <h1>English104 Exercise Viewer</h1>
+          <h1>English104</h1>
         </div>
-        <UnitSelector
-          units={units}
-          currentUnit={currentUnit}
-          onUnitSelect={handleUnitSelect}
-        />
+        <div className="mode-tabs">
+          <button
+            className={`mode-tab ${mode === 'exercises' ? 'active' : ''}`}
+            onClick={() => setMode('exercises')}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Exercises
+          </button>
+          <button
+            className={`mode-tab ${mode === 'vocabulary' ? 'active' : ''}`}
+            onClick={() => setMode('vocabulary')}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Vocabulary
+          </button>
+        </div>
+        {mode === 'exercises' && (
+          <div className="unit-selector-wrapper">
+            <UnitSelector
+              units={units}
+              currentUnit={currentUnit}
+              onUnitSelect={handleUnitSelect}
+            />
+          </div>
+        )}
       </header>
 
       <main className="app-main">
-        {currentUnit && (
+        {mode === 'exercises' && currentUnit && (
           <div>
             <div className="unit-navigation">
               <button
@@ -103,6 +125,9 @@ function App() {
 
             <ExerciseList key={currentUnit.id} unit={currentUnit} />
           </div>
+        )}
+        {mode === 'vocabulary' && (
+          <VocabHome onBack={() => setMode('exercises')} />
         )}
       </main>
     </div>
